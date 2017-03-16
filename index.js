@@ -3,21 +3,7 @@ exports.yargs = {
     describe: 'network to websockets pipe',
 
     builder: function (builder) {
-        const chalk = require('chalk')
-
-        const banner = chalk.magenta(`
-  ██████  ▒█████   ▄████▄   ██ ▄█▀
-▒██    ▒ ▒██▒  ██▒▒██▀ ▀█   ██▄█▒ 
-░ ▓██▄   ▒██░  ██▒▒▓█    ▄ ▓███▄░ 
-  ▒   ██▒▒██   ██░▒▓▓▄ ▄██▒▓██ █▄ 
-▒██████▒▒░ ████▓▒░▒ ▓███▀ ░▒██▒ █▄
-▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ░▒ ▒  ░▒ ▒▒ ▓▒
-░ ░▒  ░ ░  ░ ▒ ▒░   ░  ▒   ░ ░▒ ▒░
-░  ░  ░  ░ ░ ░ ▒  ░        ░ ░░ ░ 
-      ░      ░ ░  ░ ░      ░  ░   
-                  ░               
-
-`)
+        const banner = require('./banner')
 
         builder.usage(`${banner}${this.original}`)
 
@@ -61,6 +47,9 @@ exports.yargs = {
         const ws = require('ws')
         const chalk = require('chalk')
         const pcap = require('ws-pcap2')
+        const banner = require('./banner')
+
+        console.log(banner)
 
         let messageQueueSize
         let messageQueue
