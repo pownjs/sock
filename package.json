@@ -1,0 +1,37 @@
+{
+  "name": "pown-sock",
+  "version": "0.0.0",
+  "description": "Pownage guaranteed",
+  "main": "index.js",
+  "scripts": {
+    "sock": "POWN_ROOT=./ pown sock"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-sock.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework"
+  ],
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-sock/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-sock#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "ws": "^2.2.1",
+    "ws-pcap2": "^3.1.1"
+  },
+  "pown": {
+    "commands": [
+      "./index.js"
+    ]
+  },
+  "devDependencies": {
+    "pown-cli": "^0.2.1"
+  }
+}
