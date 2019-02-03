@@ -1,3 +1,1 @@
-# pown-sock [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/pownjs/Lobby)
-
-This tool has been deprecated in favour of [pown-now](https://github.com/pownjs/pown-now).
+[![Follow on Twitter](https://img.shields.io/twitter/follow/pownjs.svg?logo=twitter)](https://twitter.com/pownjs)
